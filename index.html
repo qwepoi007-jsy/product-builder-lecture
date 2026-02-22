@@ -1,14 +1,248 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공학개론 - 인터랙티브 포트폴리오 아카이브</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script defer type="module" src="main.js"></script>
 </head>
-<body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+<body class="bg-primary text-secondary">
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar-container" class="sidebar">
+            <div class="sidebar-header">
+                <i data-lucide="cpu" class="logo-icon"></i>
+                <span class="logo-text">Intro to Eng.</span>
+            </div>
+            <nav id="sidebar-nav">
+                <ul>
+                    <li><a href="#home" class="active"><i data-lucide="home"></i> 홈</a></li>
+                    <li><a href="#intro"><i data-lucide="book-open"></i> 공학의 이해</a></li>
+                    <li><a href="#tech"><i data-lucide="zap"></i> 핵심 기술</a></li>
+                    <li><a href="#projects"><i data-lucide="layout-grid"></i> 학생 프로젝트</a></li>
+                    <li><a href="#resources"><i data-lucide="wrench"></i> 리소스 & 도구</a></li>
+                    <li><a href="#feedback"><i data-lucide="message-square"></i> 평가 및 피드백</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="view-section active">
+                <header class="hero">
+                    <h1 class="hero-title animate-in">Engineering <br><span class="accent-text">Interactive Archive</span></h1>
+                    <p class="hero-subtitle">미래를 설계하는 학생들의 탐구 여정을 기록하는 인터랙티브 전자책</p>
+                </header>
+
+                <!-- Curriculum Timeline -->
+                <div class="section-container">
+                    <h2 class="section-title">15주 커리큘럼 여정</h2>
+                    <div class="timeline-wrapper">
+                        <div class="timeline">
+                            <div class="timeline-line"></div>
+                            <div class="timeline-item active">
+                                <span class="week-label">Week 1-3</span>
+                                <div class="item-circle"></div>
+                                <div class="item-content">
+                                    <h3>공학의 기초</h3>
+                                    <p>과학과 공학의 차이, 공학 윤리 이해</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="week-label">Week 4-8</span>
+                                <div class="item-circle"></div>
+                                <div class="item-content">
+                                    <h3>핵심 기술 탐구</h3>
+                                    <p>AI, 메타버스, 프롬프트 엔지니어링 실습</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="week-label">Week 9-12</span>
+                                <div class="item-circle"></div>
+                                <div class="item-content">
+                                    <h3>아이디어 시각화</h3>
+                                    <p>노션 자료 정리 및 디자인 시안 제작</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <span class="week-label">Week 13-15</span>
+                                <div class="item-circle"></div>
+                                <div class="item-content">
+                                    <h3>최종 결과물 아카이브</h3>
+                                    <p>웹 기반 프로젝트 최종 구현 및 공유</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Latest Projects Slider (Mock) -->
+                <div class="section-container">
+                    <div class="flex-header">
+                        <h2 class="section-title">최신 학생 프로젝트</h2>
+                        <a href="#projects" class="view-all">전체보기 <i data-lucide="chevron-right"></i></a>
+                    </div>
+                    <div class="project-slider-wrapper">
+                        <div class="project-slider">
+                            <article class="project-card-mini">
+                                <div class="card-image placeholder-image"></div>
+                                <div class="card-content">
+                                    <span class="category">AI Ethics</span>
+                                    <h4>인공지능의 편향성 탐구</h4>
+                                    <p>김지혜 학생</p>
+                                </div>
+                            </article>
+                            <article class="project-card-mini">
+                                <div class="card-image placeholder-image"></div>
+                                <div class="card-content">
+                                    <span class="category">Metaverse</span>
+                                    <h4>가상 학교 도서관 설계</h4>
+                                    <p>이준호 학생</p>
+                                </div>
+                            </article>
+                            <article class="project-card-mini">
+                                <div class="card-image placeholder-image"></div>
+                                <div class="card-content">
+                                    <span class="category">Interface</span>
+                                    <h4>노약자를 위한 앱 UI 디자인</h4>
+                                    <p>박서연 학생</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Class Operation & Evaluation Section -->
+            <section id="intro" class="view-section">
+                <header class="section-header">
+                    <h1 class="page-title">수업 운영 및 평가 계획</h1>
+                    <p class="page-subtitle">노션, AI, 안티그래비티를 활용한 PBL(Project Based Learning) 기반 공학개론</p>
+                </header>
+
+                <!-- Phase Accordions -->
+                <div class="section-container">
+                    <h2 class="section-title">15주 수업 로드맵</h2>
+                    <div class="accordion-group">
+                        <!-- Phase 1 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="phase-badge">Phase 1</span>
+                                <h3>공학의 기초 및 구조화 (노션 활용)</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul class="week-list">
+                                    <li><strong>1주차:</strong> 오리엔테이션, 공학의 이해 (과학 vs 공학), 개별 주제 브레인스토밍</li>
+                                    <li><strong>2주차:</strong> 주제 확정 및 역할 분담, 공학 윤리 토의</li>
+                                    <li><strong>3주차:</strong> 프롬프트 엔지니어링 기초 (AI 원리 및 효과적인 프롬프트 작성법)</li>
+                                    <li><strong>4주차:</strong> 노션(Notion) 활용 자료 수집, 데이터베이스 구조화 및 아카이빙</li>
+                                    <li><strong>5주차:</strong> 1차 기획안 발표 및 동료 피드백 (Peer Review)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Phase 2 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="phase-badge">Phase 2</span>
+                                <h3>생성형 AI 협업 및 웹디자인 기획</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul class="week-list">
+                                    <li><strong>6주차:</strong> AI 활용 콘텐츠 확장 (텍스트 초안 가공 및 팩트 체크)</li>
+                                    <li><strong>7주차:</strong> UI/UX 기초 (가독성 높은 레이아웃 및 정보 구조화)</li>
+                                    <li><strong>8주차:</strong> AI 활용 웹디자인 무드보드 제작 (컬러 팔레트, 폰트 기획)</li>
+                                    <li><strong>9주차:</strong> 웹페이지 스토리보드(와이어프레임) 완성</li>
+                                    <li><strong>10주차:</strong> 디자인 시안 중간 점검 (2차 발표)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Phase 3 -->
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                <span class="phase-badge">Phase 3</span>
+                                <h3>안티그래비티 활용 웹 구현 및 통합</h3>
+                                <i data-lucide="chevron-down"></i>
+                            </button>
+                            <div class="accordion-content">
+                                <ul class="week-list">
+                                    <li><strong>11주차:</strong> 안티그래비티 기초 (로우코드 이해 및 기본 요소 배치)</li>
+                                    <li><strong>12주차:</strong> 개별 웹페이지 뼈대 구축 및 기획 데이터 이식</li>
+                                    <li><strong>13주차:</strong> 인터랙티브 요소 적용 (애니메이션, 아코디언 메뉴, 반응형 점검)</li>
+                                    <li><strong>14주차:</strong> 통합 웹 전자책 구축 및 디버깅 (하이퍼링크 통합)</li>
+                                    <li><strong>15주차:</strong> 최종 산출물 발표회 (시연 및 과정 소감 공유)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Evaluation Section -->
+                <div class="section-container">
+                    <h2 class="section-title">평가 계획 (과정 중심 평가)</h2>
+                    
+                    <!-- Weightage Cards -->
+                    <div class="weight-grid">
+                        <div class="weight-card">
+                            <span class="percent">30%</span>
+                            <h4>자료 탐구 및 기획력</h4>
+                            <p>노션 활용 구조화 능력</p>
+                        </div>
+                        <div class="weight-card">
+                            <span class="percent">20%</span>
+                            <h4>AI 활용 및 문제 해결</h4>
+                            <p>프롬프트 정교성 및 비판적 수용</p>
+                        </div>
+                        <div class="weight-card">
+                            <span class="percent">30%</span>
+                            <h4>웹 구현 및 완성도</h4>
+                            <p>UI/UX 설계 및 안티그래비티 구현</p>
+                        </div>
+                        <div class="weight-card">
+                            <span class="percent">20%</span>
+                            <h4>프로젝트 참여도</h4>
+                            <p>협업 태도 및 상호 평가</p>
+                        </div>
+                    </div>
+
+                    <!-- Rubric Table -->
+                    <div class="table-container">
+                        <table class="rubric-table">
+                            <thead>
+                                <tr>
+                                    <th>평가 항목</th>
+                                    <th>세부 평가 기준 (Rubric)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>1. 노션 자료 구조화</strong></td>
+                                    <td>주제의 공학적 깊이가 있는가? 타인이 읽기 쉽게 논리적으로 분류되었는가?</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>2. AI 도구 활용</strong></td>
+                                    <td>프롬프트를 정교하게 작성하였는가? AI를 효과적인 보조 수단으로 통제했는가?</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>3. 웹 구현성</strong></td>
+                                    <td>기획 의도가 충실히 반영되었는가? 반응형 내비게이션과 가독성이 우수한가?</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>4. 협업 및 소통</strong></td>
+                                    <td>전체 프로젝트의 통일성을 위해 급우들과 적극적으로 의견을 조율했는가?</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
 </html>
