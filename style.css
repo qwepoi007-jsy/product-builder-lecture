@@ -848,3 +848,44 @@
         color: var(--accent-color);
     }
 
+
+/* Understanding Engineering Specifics */
+.inner-content {
+    padding: 2rem 3rem 2.5rem 5.5rem;
+}
+.inner-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+    color: var(--text-main);
+}
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.info-list li {
+    background: white;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+.info-list li strong {
+    color: var(--accent-color);
+    margin-right: 0.5rem;
+}
+.weight-mini-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+.w-mini {
+    background: var(--accent-color);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: center;
+}

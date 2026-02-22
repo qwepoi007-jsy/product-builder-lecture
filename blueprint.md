@@ -12,19 +12,10 @@ An interactive web-based e-book designed for a high school "Introduction to Engi
     - **Home:** Hero typography, 15-week linear timeline, and project highlight slider.
     - **Interactive Elements:** Accordions for curriculum details, Grid layouts for project cards, and Step-based UI for project walkthroughs.
 
-## Current Implementation Plan (Phase 3)
-1.  **Core Technologies (#tech):**
-    *   In-depth content for gifted students: AI/ML, Robotics & Kinematics, Aerospace, Bio-Engineering.
-    *   Visual representation using specialized icon sets.
-2.  **Student Projects (#projects):**
-    *   Dynamic Grid Gallery with high-quality image placeholders.
-    *   Hover effects showing project metadata (student name, year, tech stack).
-3.  **Resources & Tools (#resources):**
-    *   Curated links to IEEE, MIT OCW, GitHub, and professional Engineering software.
-4.  **Feedback & Evaluation (#feedback):**
-    *   Interactive Comment UI (Input field + Threaded comment list).
-    *   Local storage/State management for mock comment posting.
-5.  **AdSense & Professionalism:**
-    *   Adding AdSense placeholders (ad-slots) strategically.
-    *   Footer with Privacy Policy, Contact info, and Terms (Required for AdSense).
-    *   SEO-friendly meta tags and semantic HTML.
+## Current Implementation Plan (Phase 4)
+1.  **Understanding Engineering (#intro):**
+    *   Content for Gifted Students: Science vs Engineering, Engineering Ethics, Future Industry Outlook.
+    *   Implementation of "Curriculum & Evaluation" as a sub-toggle or following section within Intro.
+    *   Accordion-based layout for readability.
+2.  **Navigation Fix:**
+    *   Ensure all sidebar links correctly point to their respective sections.
