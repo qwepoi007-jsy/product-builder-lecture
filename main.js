@@ -121,11 +121,45 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Example of a Web Component for future use
-class ProjectCard extends HTMLElement {
-    constructor() {
-        super();
+    // Comment Submission Logic
+    const postBtn = document.getElementById('post-comment');
+    const commentList = document.getElementById('comments-list');
+    const commentText = document.getElementById('comment-text');
+    const userName = document.getElementById('user-name');
+    const userRole = document.getElementById('user-role');
+
+    if (postBtn) {
+        postBtn.addEventListener('click', () => {
+            const text = commentText.value.trim();
+            const name = userName.value.trim() || '익명';
+            const role = userRole.value;
+
+            if (!text) {
+                alert('의견을 입력해주세요.');
+                return;
+            }
+
+            const now = new Date();
+            const dateStr = `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}.${String(now.getDate()).padStart(2, '0')}`;
+
+            const commentItem = document.createElement('div');
+            commentItem.className = 'comment-item animate-in';
+            commentItem.innerHTML = `
+                <div class="c-header">
+                    <span class="c-author ${role === 'teacher' ? 'teacher' : ''}">${name} (${role === 'teacher' ? '교사/전문가' : '학생'})</span>
+                    <span class="c-date">${dateStr}</span>
+                </div>
+                <p class="c-text">${text.replace(/\n/g, '<br>')}</p>
+            `;
+
+            commentList.prepend(commentItem);
+            
+            // Reset fields
+            commentText.value = '';
+            userName.value = '';
+            
+            // Re-run icons if needed (though none in this injection)
+            if (window.lucide) window.lucide.createIcons();
+        });
     }
-    // Implementation for dynamic project cards
-}
-customElements.define('project-card', ProjectCard);
+

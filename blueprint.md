@@ -12,16 +12,19 @@ An interactive web-based e-book designed for a high school "Introduction to Engi
     - **Home:** Hero typography, 15-week linear timeline, and project highlight slider.
     - **Interactive Elements:** Accordions for curriculum details, Grid layouts for project cards, and Step-based UI for project walkthroughs.
 
-## Current Implementation Plan (Phase 2)
-1.  **Class Operation Section (#intro):**
-    *   Implement a 3-Phase Accordion UI for the 15-week curriculum.
-    *   Phase 1 (Notion), Phase 2 (AI), Phase 3 (Antigravity).
-2.  **Evaluation Plan Section:**
-    *   Create a rubric-based evaluation table.
-    *   Add "Percentage Cards" to highlight the weight of each evaluation factor.
-3.  **Interactivity:**
-    *   Add JavaScript logic for accordion toggles (open/close).
-    *   Implement SPA-style section switching in `main.js`.
-4.  **Styling:**
-    *   Add custom styles for accordions (plus/minus icons, smooth height transitions).
-    *   Style the evaluation table with a modern, borderless look and subtle hover effects.
+## Current Implementation Plan (Phase 3)
+1.  **Core Technologies (#tech):**
+    *   In-depth content for gifted students: AI/ML, Robotics & Kinematics, Aerospace, Bio-Engineering.
+    *   Visual representation using specialized icon sets.
+2.  **Student Projects (#projects):**
+    *   Dynamic Grid Gallery with high-quality image placeholders.
+    *   Hover effects showing project metadata (student name, year, tech stack).
+3.  **Resources & Tools (#resources):**
+    *   Curated links to IEEE, MIT OCW, GitHub, and professional Engineering software.
+4.  **Feedback & Evaluation (#feedback):**
+    *   Interactive Comment UI (Input field + Threaded comment list).
+    *   Local storage/State management for mock comment posting.
+5.  **AdSense & Professionalism:**
+    *   Adding AdSense placeholders (ad-slots) strategically.
+    *   Footer with Privacy Policy, Contact info, and Terms (Required for AdSense).
+    *   SEO-friendly meta tags and semantic HTML.
